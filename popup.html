@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <style type="text/css">
+      html {
+        margin: 0;
+      }
+      html * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Open Sans', sans-serif, Georgia, serif;
+        padding: 20px 10px 10px;
+        background-color: #7ed7ff;
+        text-align: center;
+      }
+      .content {
+        width: 100%;
+        min-width: 220px;
+        max-width: 250px;
+      }
+      a {
+        color: #003946;
+      }
+      a:hover {
+        color: #003946;
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        max-width: 52px;
+        overflow: hidden;
+        border: 5px solid #7e94ff;
+      }
+      input {
+        width: 100%;
+        padding: 10px 5px;
+      }
+      button {
+        border: 0;
+        border-radius: 0;
+        background-color: rgb(118, 255, 152);
+        padding: 10px 20px;
+        width: 100%;
+        margin: 5px auto;
+      }
+
+      button.disabled {
+        background-color: #eee;
+      }
+
+      button .disabled-text {
+        display: none;
+      }
+
+      button.disabled .disabled-text{
+        display: block;
+      }
+
+      button.disabled .enabled-text{
+        display: none;
+      }
+
+      button:hover {
+        background-color: rgb(202, 202, 202);
+      }
+      h1 {
+        color: #003946;
+        font-size: 22px;
+        margin: 10px 0;
+      }
+      p.creds {
+        font-size: 10px;
+        text-align: right;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <img src="./images/thumb.png">
+      <h1>BGG Thumb Disabler</h1>
+      <form id="form">
+        <button id="toggle" type="submit">
+          <span class="disabled-text">OFF</span>
+          <span class="enabled-text">ON</span>
+        </button>
+      </form>
+      <p class="creds">Built by BGG User <a href="https://boardgamegeek.com/user/pleroph" target="_blank">pleroph</a></p>
+    </div>
+    <script src="./assets/scripts.js"></script>
+  </body>
+</html>

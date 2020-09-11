@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "BGG Thumb Remover",
+  "version": "1.0.0",
+  "description": "If you're tired of seeing thumb counts on BoardgameGeek download this extension to hide them",
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon.png",
+    "128": "images/icon-128.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.boardgamegeek.com/*"],
+      "js": ["assets/background.js"]
+    }
+  ]
+}
